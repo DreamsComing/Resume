@@ -1,0 +1,192 @@
+main{
+    position: absolute;
+    top: 1%;
+    right: 3%;
+    width: 65%;
+    height: 97%;
+    text-align: left;
+    color: #323B4C;
+
+}
+.Introduce{
+    position: absolute;
+    left: 10%;
+    font-size: 30px
+}
+.NameBlock{
+    line-height: 10px;
+}
+h1{
+    font-weight: 500;
+    letter-spacing: 7px;
+}
+.tittleJob{
+    font-weight: 300;
+}
+.tittleExperience{
+    line-height: 0px;
+}
+.tittleExperience{
+    font-size: 40px;
+    font-weight: 800;
+    letter-spacing: 3px;
+}
+.Name{
+    font-size: 50px;
+    color: #29303e;
+    font-weight: 700;
+}
+.ExtraInformation{
+    width: 80%;
+}
+.ExtraInformation>p{
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    color: #232936b5;
+}
+.line{
+    display: inline-block;
+    text-align: left;
+    width: 30%;
+    height: 3px;
+    background-color: #323B4C;
+}
+
+.Experience{
+    position: absolute;
+    top:calc(30% - 11.5%);
+    left: 10%;
+    width: 80%;
+}
+.lineExperience{
+    position: absolute;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background-color: #323B4C;
+}
+
+.VidioBlock{
+    position: absolute;
+    top: 27%;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+video{
+    display: block;
+    border: 3px inset #323B4C ;
+    border-radius: 1rem 1rem 1rem 1rem;
+    height: 422px;
+    box-shadow: 0px 0px 40px 10px #323B4C;
+}
+
+.Line_Shelf{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+    width: 3px;
+    height: 100%;
+    background-color: #323B4C;
+    overflow: visible;
+
+
+}
+.Line_Shelf::before{
+  content: '';
+  position: absolute;
+  top: -0.3%;
+  z-index: 3;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 3px inset #323B4C;
+}
+
+.project_Block{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+   position: absolute;
+   top: 50%;
+   width: 90%;
+   height: 40%;
+}
+.Block_project_car, .Block_project_burgerShop{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.BLockImg{
+    width: 87%;
+}
+.projectPhoto{
+    position:unset;
+    width: 100%;
+    height: 450px;
+    border-radius: 0;
+    border: 3px solid #000000b6;
+    box-shadow: 0 0 10px 5px #323B4C;
+}
+
+@media screen and (max-width:1120px) {
+    .project_Block{
+        justify-content: space-around;
+    }
+    .VidioBlock>video{
+        width: calc(90% - 0.5%) ;
+        height: 360px;
+    }
+    .projectPhoto{
+        height: 350px;
+    }
+}
+@media screen and (max-width:910px) {
+    main{
+        width: 70%;
+        right: inherit;
+        left: 30%;
+    }
+    h1{
+        font-size: 30px;
+        font-weight: 700;
+    }
+    .VidioBlock>video{
+        width: calc(90% - 1.7%) ;
+        height: 305px;
+    }
+    .project_Block{
+        justify-content: space-around;
+        top: 45%;
+    }
+    .Block_2{
+        margin-top: 30%;
+    }
+    .project_Block{
+        height: 35%;
+    }
+}
+@media screen and (min-width:1800px) {
+    .ExtraInformation>p{
+        font-size: 20px;
+        line-height: 35px;
+    }
+
+}
+@media screen and (min-width: 2000px) {
+    .VidioBlock {
+        top: 25%;
+    }
+    video{
+        width: 1000px;
+        height: 563px;
+    }
+}

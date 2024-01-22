@@ -1,0 +1,72 @@
+.Reference{
+    position: absolute;
+    top: 88%;
+    left: 35%;
+    color: #000;
+    text-align: left;
+    width: 57%;
+}
+.Reference>h2{
+    font-size: 40px;
+}
+.Reference>hr{
+    background-color: #000;
+    height: 3px;
+    width: 100%;
+}
+
+.PersonelInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.NameBlockReference{
+    line-height: 1px;
+}
+.NameBlockReference>p{
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+.underText{
+    display: inline;
+    font-weight: 400;
+    letter-spacing: 3px;
+}
+
+.conection{
+    margin-top: 3%;
+    line-height: 10px;
+}
+.conection>p{
+    display: flex;
+    align-items: center;
+    width: 70%;
+    min-width: 350px;
+    font-weight: 700;
+    font-size: 15px;
+}
+.conection>p>a{
+    color: #000000ae;
+    margin-left: 10%;
+    font-weight: 500;
+    letter-spacing: 3px;
+}
+
+@media screen and (max-width:910px) {
+    .Reference{
+        top: 83%;
+    }
+}
+@media screen and (min-width:1800px) {
+    .conection{
+        line-height: 23px;
+    }
+    .conection>p{
+        font-size: 20px;
+        letter-spacing: 3px;
+    }
+    .conection>p>a{
+        margin-left: 3%;
+    }
+}

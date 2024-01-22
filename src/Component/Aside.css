@@ -1,0 +1,141 @@
+aside{
+    position: absolute;
+    width: 30%;
+    min-width: 270px;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    animation: backgroundAnimation 10s infinite;
+    transition: all 1s ease-in-out 0s;
+    box-shadow: 3px 0px 10px #000;
+}
+@keyframes backgroundAnimation {
+    0%{
+        background-color: rgb(0, 0, 0);
+    }
+    70%{
+         background-color: rgba(0, 0, 0, 0.934);
+    }
+
+    100%{
+         background-color: rgb(0, 0, 0);
+    }
+}
+
+.tittle{
+    margin-top: 30px;
+}
+
+.imgBlock{
+    display: flex;
+    justify-content: center;
+}
+img{
+    position: absolute;
+    top: 3%;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+.Information{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 20%;
+    color: #fff;
+    overflow: hidden;
+    text-align: left;
+    letter-spacing: 3px;
+}
+hr{
+    width: 400px;
+    height: 1px;
+    background-color: #ffffffd7;
+}
+a{
+    display: block;
+    color: #ffffffb4;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out 0s;
+}
+a:hover{
+    color: #ffffffe3;
+    transform: scale(1.01);
+}
+
+.Content,.Education,.Expertise,.Launguage{
+    margin-left: 15%;
+}
+
+.infoDate{
+    margin-top: 50px;
+    line-height: 5px;
+}
+.phone{
+    margin-top: 30px;
+}
+.Address{
+     line-height: 15px;
+}
+.Address>span{
+    color: #ffffffb4;
+}
+
+.Education{
+    margin-top: 10%;
+    letter-spacing: 0.3px;
+}
+.Education>p{
+    font-size: 17px;
+}
+.Block_2{
+    margin-top: 10%;
+}
+.BlockEducation{
+    line-height: 10px;
+}
+.BLockList>ul{
+    font-size: 23px;
+    letter-spacing: 3px;
+    line-height: 50px;
+    text-shadow: 0.5px 1px 1px #848484;
+}
+
+.LaunguageList>p{
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+@media screen and (max-width:910px) {
+    .BlockEducation>h3>span{
+        display: none;
+    }
+}
+@media screen and (min-width:1800px) {
+    .infoDate{
+        line-height: 10px;
+    }
+    .infoDate>h3{
+        font-size: 25px;
+    }
+    .infoDate>a{
+        font-size: 20px;
+    }
+    .Block_1{
+        margin-top: 40px;
+    }
+    .BlockEducation{
+        line-height: 15px;
+    }
+    .BlockEducation>h3{
+        font-size: 25px;
+    }
+    .BlockEducation>p{
+        font-size: 20px;
+        font-weight: 300;
+    }
+    .LaunguageList>p{
+        font-size: 20px;
+    }
+}

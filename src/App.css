@@ -1,5 +1,14 @@
 .App {
   text-align: center;
+  animation: 2s AppShowing;
+}
+@keyframes AppShowing {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
 }
 
 .App-logo {
@@ -36,3 +45,5 @@
     transform: rotate(360deg);
   }
 }
+
+
